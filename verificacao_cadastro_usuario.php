@@ -33,18 +33,18 @@ if (isset($_POST['nome'])) {
 							//Verificando se o campo confirmação de senha foi preenchido
 							if (isset($_POST['conf_senha_cadastro'])) {
 								//Verificando se o mesmo nome de login já não está em uso
-							    $verificando_login = mysqli_query($funciona, "SELECT * FROM usuarios WHERE login = '$login' ");
+							    $verificando_login = mysqli_query($funciona, "SELECT * FROM usuario_por_setor WHERE login = '$login' ");
 							    $login_verificado = mysqli_num_rows($verificando_login);
 							    if ($login_verificado == "0") {
 							    	//Verificando se o mesmo nome já não existe no banco de dados
-							    	$verificando_nome = mysqli_query($funciona, "SELECT * FROM usuarios WHERE nome = '$nome' ");
+							    	$verificando_nome = mysqli_query($funciona, "SELECT * FROM usuario_por_setor WHERE nome = '$nome' ");
 							    	$nome_verificado = mysqli_num_rows($verificando_nome);
 							    	if ($nome_verificado == "0") {
 
 							    		//Verificando se senha e confirmação de senha estão iguais
 								      	if ($senha == $senha_conf) {
 											//Inserido o novo usuário no banco de dados
-										$cadastrando_usuario ="INSERT INTO usuarios(nome, contato, email, setor, login, senha ) VALUES ('$nome', '$contato', '$email', '$setor', '$login', '$senha_conf')";
+										$cadastrando_usuario ="INSERT INTO usuario_por_setor(contato, senha, login, nome, setor ) VALUES ('$contato','$senha_conf','$login', '$nome', '$setor', '$email' )";
 										$resultado = mysqli_query($funciona, $cadastrando_usuario );
 										//Verificando se o usuário foi cadastrado
 				            				if (isset($cadastrando_usuario)) {
