@@ -44,7 +44,7 @@ if (isset($_POST['nome'])) {
 							    		//Verificando se senha e confirmação de senha estão iguais
 								      	if ($senha == $senha_conf) {
 											//Inserido o novo usuário no banco de dados
-										$cadastrando_usuario ="INSERT INTO usuario_por_setor(contato, senha, login, nome, setor ) VALUES ('$contato','$senha_conf','$login', '$nome', '$setor', '$email' )";
+										$cadastrando_usuario ="INSERT INTO usuario_por_setor(contato, senha, login, nome, setor, email) VALUES ('$contato','$senha_conf','$login', '$nome', '$setor', '$email' )";
 										$resultado = mysqli_query($funciona, $cadastrando_usuario );
 										//Verificando se o usuário foi cadastrado
 				            				if (isset($cadastrando_usuario)) {
