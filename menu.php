@@ -16,7 +16,7 @@
                Solicitações
                </a>
                <!-- Usuários -->
-               <a href="usuarios_por_setor">
+               <a href="usuarios.php">
                <br>
                Usuários
                </a>
