@@ -5,7 +5,7 @@
 	<title></title>
 </head>
 <body>
-	<form  method="POST" action="menu.php">
+	<form  method="POST" action="direcionando.php">
 	<input  type="text" name="login"  placeholder=" " required>
 	<label>Login:  </label>
 
