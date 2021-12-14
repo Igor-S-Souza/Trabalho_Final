@@ -1,4 +1,8 @@
-<?php include('Banco.php'); ?>
+<?php 
+
+include('../banco/Banco.php'); 
+
+?>
 <html>
 <head>
 	<meta charset="utf-8">

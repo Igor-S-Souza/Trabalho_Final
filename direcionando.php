@@ -1,6 +1,6 @@
 <?php 
 //Conexão com o banco de dados
-	include("Banco.php");
+	include("banco/Banco.php");
 
 	//Iniciando uma sessão
 	session_start();
@@ -39,17 +39,17 @@
                         	
                         	//Direcionando o usuário para a área de seu setor
                         	if ($setor == "Tecnico") {
-                        		header("Location: menu.php");
+                        		header("Location: adm/menu.php");
                         	}
 
                         	//Direcionando o usuário para a área de seu setor
                         	if ($setor == "Gestor") {
                         		$_SESSION['msg_de_bem_vindo'] = "<p>Olá, $nome</p>";
-                        		header("Location: menu.php");
+                        		header("Location: adm/menu.php");
                         	}
                         	if ($setor == "Telefonista") {
                         		$_SESSION['msg_de_bem_vindo'] = "<p>Olá, $nome</p>";
-                        		header("Location: menu.php");
+                        		header("Location: usuario/menu.php");
                         	}	
 
                         	 }

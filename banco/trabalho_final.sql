@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 12-Dez-2021 às 22:09
--- Versão do servidor: 10.4.20-MariaDB
--- versão do PHP: 8.0.9
+-- Tempo de geração: 14-Dez-2021 às 18:54
+-- Versão do servidor: 10.4.21-MariaDB
+-- versão do PHP: 8.0.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -86,8 +86,17 @@ CREATE TABLE `usuario_por_setor` (
   `senha` varchar(20) DEFAULT NULL,
   `login` varchar(20) DEFAULT NULL,
   `nome` varchar(40) DEFAULT NULL,
-  `setor` varchar(30) DEFAULT NULL
+  `setor` varchar(30) DEFAULT NULL,
+  `email` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Extraindo dados da tabela `usuario_por_setor`
+--
+
+INSERT INTO `usuario_por_setor` (`id`, `contato`, `senha`, `login`, `nome`, `setor`, `email`) VALUES
+(1, '(51) 98650-3491', '202cb962ac59075b964b', 'igor-souza', 'Igor', 'Tecnico', 'igorajala550@gmail.com'),
+(2, '(51) 98650-3491', '123', 'luccas-torres', 'Igor2', 'Telefonista', 'IGOR@A2');
 
 --
 -- Índices para tabelas despejadas
@@ -144,7 +153,7 @@ ALTER TABLE `status1`
 -- AUTO_INCREMENT de tabela `usuario_por_setor`
 --
 ALTER TABLE `usuario_por_setor`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Restrições para despejos de tabelas
