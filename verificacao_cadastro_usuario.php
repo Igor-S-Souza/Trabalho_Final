@@ -9,8 +9,8 @@ session_start();
 	$email =$_POST['email'];
 	$contato = $_POST['contato'];
 	$login = $_POST['login'];
-	$senha = $_POST['senha_cadastro'];
-	$senha_conf = $_POST['conf_senha_cadastro'];
+	$senha = md5($_POST['senha_cadastro']);
+	$senha_conf = md5($_POST['conf_senha_cadastro']);
 
 if (isset($_POST['nome'])) {
 		//Verificando se o campo setor foi selecionado

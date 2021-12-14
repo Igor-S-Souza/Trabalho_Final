@@ -45,7 +45,7 @@
 	</tr>
 	<?php 
         //Selecionando usuários no banco de dados tabela usuarios em ordem crescente  
-        $seleciona=mysqli_query($funciona, "SELECT * FROM teste ORDER BY nome ASC");
+        $seleciona=mysqli_query($funciona, "SELECT * FROM usuario_por_setor ORDER BY nome ASC");
         while($campo=mysqli_fetch_array($seleciona)){
            $id = $campo['id'];
         ?>
