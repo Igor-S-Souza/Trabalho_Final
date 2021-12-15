@@ -51,7 +51,7 @@ if (isset($_POST['nome'])) {
 				            					//Mensagem de sucesso
 				            					$_SESSION['msg_usuario_cadastrado'] = "<p>Usuário cadastrado com sucesso!</p>";
 				            					//Redirecionando o usuário a página de cadastro
-												header("Location: cadastrando_usuario.php");
+												header("Location: usuarios.php");
 				            				}
 				            				//Caso o usuário não seja cadastrado
 				            				else {
