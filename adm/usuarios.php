@@ -2,6 +2,9 @@
 
 include('../banco/Banco.php'); 
 
+
+include('../dados_usuario/dados_user.php');
+
 ?>
 <html>
 <head>

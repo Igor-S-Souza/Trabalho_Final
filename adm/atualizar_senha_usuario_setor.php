@@ -2,6 +2,8 @@
 
    include('../banco/Banco.php');
 
+   include('../dados_usuario/dados_user.php');
+
    //Recebendo e armazenando a identificação do usuário
       $id = intval($_GET['id']);
       

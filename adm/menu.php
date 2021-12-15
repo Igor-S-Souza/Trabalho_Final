@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<?php 
+   include('../dados_usuario/dados_user.php');
+ ?>
 <html>
    <body>
       <br>

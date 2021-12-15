@@ -1,3 +1,6 @@
+<?php 
+   include('../dados_usuario/dados_user.php');
+ ?>
 <body>
       <br>
       <br>
