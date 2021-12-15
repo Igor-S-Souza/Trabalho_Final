@@ -69,7 +69,30 @@ include('../banco/Banco.php');
               <p><?=$campo['login']?> </p>
            </center>
         </td>
-     </tr>
+        <td class="corpotabela excluir">
+            <center>
+               <!-- botão editar -->
+               <div>
+                  <a href="editar_user_setor.php?id=<?php echo $id //Enviando a identificação do usuário para a página de edição de usuário (editar_user.php) ?>">editar
+                  </a>
+               </div>
+            </center>
+         </td>
+         <td >
+            <center>
+               <!-- botão excluir -->
+               <div>
+                  <a href="conf_excluir_user_setor.php?id=<?php echo $id; //Enviando a identificação do usuário para a página de exclusão de usuáro (conf_excluir_user.php) ?>">excluir
+                  </a>
+               </div>
+            </center>
+         </td>
+         <td>
+            <center>
+               <a href="atualizar_senha_usuario_setor.php?id=<?php echo $id; ?>">Atualizar senha</a>
+            </center>
+         </td>
+      </tr>
  <?php } ?>
 </table>
 </center>
