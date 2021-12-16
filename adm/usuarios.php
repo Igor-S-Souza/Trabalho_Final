@@ -13,13 +13,13 @@ include('../dados_usuario/dados_user.php');
 	<link rel="stylesheet" href="../css/estilo.css">
 </head>
 <body>
-	<a href="cadastrando_usuario.php">Cadastrar usuario</a>
+	<img href="cadastrando_usuario.php">Cadastrar usuario</a>
 	<a href="menu.php">Pagina inicial</a>
 <br>
 <br>
 <br>
 <center>
-<table border="1">
+<table class="primata" border="1">
 	<tr>
 	    <td  >
 	       <strong>
