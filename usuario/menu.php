@@ -9,12 +9,12 @@
       <br>
       <center>
                <!-- Abrir Solicitação -->
-               <a  href="abrir_solicitaçao">
+               <a  href="../adm/abrir_solicitacao.php">
                <br> 
                Abrir Solicitação          
                </a>
                <!-- Solicitações -->   
-               <a href="colaborador">
+               <a href="../adm/colaborador.php">
                <br> 
                Solicitações
                </a>
