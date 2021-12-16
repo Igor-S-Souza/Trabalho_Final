@@ -10,12 +10,9 @@ include('../dados_usuario/dados_user.php');
 <head>
 	<meta charset="utf-8">
 	<title></title>
-	<link rel="stylesheet" href="../css/estilo.css">
+   <link rel="stylesheet" href="../css/estilo.css">
 </head>
 <body>
-	<a href="cadastrando_usuario.php">Cadastrar usuario</a>
-	<a href="menu.php">Pagina inicial</a>
-<br>
 <br>
 <br>
 <center>
@@ -33,7 +30,7 @@ include('../dados_usuario/dados_user.php');
 	    </td>
 	    <td >
 	       <strong>
-	          <center>Login</center>
+	          <center>Solicitação</center>
 	       </strong>
 	    </td>
 	    <td  >
@@ -46,17 +43,12 @@ include('../dados_usuario/dados_user.php');
 	          <center>EXCLUIR</center>
 	       </strong>
 	    </td>
-	    <td >
-	       <strong>
-	          <center>Atualizar senha</center>
-	       </strong>
-	    </td>
 	</tr>
 	<?php 
         //Selecionando usuários no banco de dados tabela usuarios em ordem crescente  
-        $seleciona=mysqli_query($funciona, "SELECT * FROM usuario_por_setor ORDER BY nome ASC");
+        $seleciona=mysqli_query($funciona, "SELECT * FROM solicitacao ORDER BY id_solicitacao ASC");
         while($campo=mysqli_fetch_array($seleciona)){
-           $id = $campo['id'];
+           $id = $campo['id_solicitacao'];
         ?>
      <tr>
         <td >

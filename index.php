@@ -10,7 +10,6 @@
 	<link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-	boiola
 	<div class="macacada">
 	<form  method="POST" action="direcionando.php">
 	<input  type="text" name="login"  placeholder="login" required>

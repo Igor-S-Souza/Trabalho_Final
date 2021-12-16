@@ -19,7 +19,7 @@
                <br>
               
                <!-- Formulário de cadastro -->
-               <form action="verificacao_cadastro_usuario.php" method="POST">
+               <form action="verificacao_cadastro_contato.php" method="POST">
 
                   <div >
                      <!-- preencher com o nome do solicitante -->
@@ -29,7 +29,7 @@
                   <br>
                   <div>
                      <!-- Selecionando o setor -->
-                     <select name="setor" required="required">
+                     <select name="setor">
                      <optgroup>
                      <option>Selecione o acesso</option>
                      </optgroup>
@@ -41,35 +41,24 @@
                      </select>
                      <label >Setor</label>
                      </div>
+                     <br>
                      <div >
-                        <input type="email" name="email" placeholder=" " required>
+                        <input type="email" name="email" placeholder=" ">
                         <label> E-mail: </label>
                      </div>
                      <br>
                      <div>
                         <!-- contato -->
-                        <input type="text" maxlength="15" name="contato" placeholder=" " required>  
+                        <input type="text" maxlength="15" name="contato" placeholder=" ">  
                         <label> Contato: </label>
                      </div>
                      <br>
-                     <div >
-                        <!-- login -->
-                        <input type="text" name="login" placeholder=" " required>   
-                        <label>Login: nome-sobrenome</label>
-                     </div>
-                  <br>
-                     <div >
-                        <!-- senha -->
-                        <input type="password" name="senha_cadastro" placeholder=" " required>
-                        <label> Senha: EX: 1234567</label>
-                     </div>
                      <br>
                      <div >
                      <!-- confirmar senha -->
-                     <input type="password" name="conf_senha_cadastro" placeholder=" " required>
-                     <label> Confirmar senha:</label>
-                     
-                  </div>
+                     <input type="text" name="observacao" placeholder=" " >
+                     <label> Observação:</label>
+                     </div>
                   <br>
                         <!-- enviar -->
                         <button type="submit">CADASTRAR</button>
