@@ -8,17 +8,17 @@
       <br>
       <center>
                <!-- Abrir Solicitação -->
-               <a  href="abrir_solicitaçao">
+               <a  href="./abrir_solicitacao.php">
                <br> 
                Abrir Solicitação          
                </a>
                <!-- Solicitações -->   
-               <a href="colaborador">
+               <a href="./colaborador.php">
                <br> 
                Solicitações
                </a>
                <!-- Usuários -->
-               <a href="usuarios.php">
+               <a href="./usuarios.php">
                <br>
                Usuários
                </a>
