@@ -9,10 +9,7 @@
    <br>
    <br>
    <center>
-      <div>
-         <center>
-            <br>
-         </center>
+     <div class="vinigay">
          <center>
             <!-- Nome da página  -->
             <h1>Cadastro de usuário</h1>
@@ -79,3 +76,5 @@
                </tr>
             </form>
          </center>
+      </div>
+</body>
