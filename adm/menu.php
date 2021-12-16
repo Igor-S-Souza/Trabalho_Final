@@ -2,6 +2,7 @@
    include('../dados_usuario/dados_user.php');
  ?>
 <html>
+<link rel="stylesheet" href="../css/estilo.css">
    <body>
       <br>
       <br>
@@ -13,7 +14,7 @@
                Abrir Solicitação          
                </a>
                <!-- Solicitações -->   
-               <a href="./colaborador.php">
+
                <br> 
                Solicitações
                </a>
@@ -28,7 +29,7 @@
                Andamento
                </a>
                <!-- Contatos -->
-               <a href="contato">
+               <a href="contatos.php">
                <br>
                Contatos
                </a>

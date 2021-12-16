@@ -1,6 +1,9 @@
 <?php 
    include('../dados_usuario/dados_user.php');
  ?>
+ <head>
+    <link rel="stylesheet" href="../css/estilo.css">
+ </head>
 <body>
    <br>
    <br>

@@ -24,22 +24,23 @@
                <br>
                <?php                   
                //Selecionando o usuario do banco de dados na tabela usuarios
-               $seleciona=mysqli_query($funciona, "SELECT * FROM usuario_por_setor WHERE  id = '$id' ");
+               $seleciona=mysqli_query($funciona, "SELECT * FROM contatos WHERE  id = '$id' ");
                      while($campo=mysqli_fetch_array($seleciona)){?>
                <!-- Formulário de cadastro -->
-         <form action="editando_usuario.php" method="POST">
+         <form action="editando_contato.php" method="POST">
              <input type="hidden" name="id" value="<?php echo $campo['id']; //Armazenando a identificação do usuário ?>">
                
-               <div>
-                     <label>Nome do Usuario</label>
-                     <p> <?php echo $campo['nome']; //Apresentando o nome do usuário ?> </p>
-                     </div>
+               <div >
+                     <!-- preencher com o nome do solicitante -->
+                     <input type="text" name="nome" placeholder=" "  value="<?php echo $campo['entidade'] ?>" required >  
+                     <label> Nome: </label>
+                  </div>
                   <br>
                   <div>
                      <!-- Selecionando o setor -->
-                     <select name="setor" required="required">
+                     <select name="setor" >
                      <optgroup>
-                     <option><?php echo $campo['setor']; //Apresentando o setor do solicitante em questão ?></option>
+                     <option >Selecione o acesso</option>
                      </optgroup>
                      <optgroup label="tipo de acesso">
                      <option >Tecnico</option>
@@ -47,25 +48,30 @@
                      <option >Telefonista</option>
                      </optgroup>
                      </select>
+                     <label >Setor</label>
                      </div>
-                    
-                     <input placeholder=" " type="email" name="email" value="<?php echo $campo['email']; //Apresentando o email do usuário ?>" required>
-                     <label>Email</label>
-                     </div>   
-                        <br>
-                     <div>
-                        <input placeholder=" " required required name="contato" value="<?php echo($campo['contato']); ?>"> 
-                        <label>Contato do Usuarios</label>
+                     <br>
+                     <div >
+                        <input type="email" name="email" placeholder=" " value="<?php echo $campo['email'] ?>">
+                        <label> E-mail: </label>
                      </div>
-                    
+                     <br>
                      <div>
-                     <label>Login</label>
-                     <p> <?php echo $campo['login']; //Apresentando o login do usuário ?> </p>
+                        <!-- contato -->
+                        <input type="text" maxlength="15" name="contato" placeholder=" " value="<?php echo $campo['contato'] ?>">  
+                        <label> Contato: </label>
+                     </div>
                      <br>
                      <br>
-                        <button type="submit">
-                           Alterar
-                        </button>
+                     <div >
+                     <!-- confirmar senha -->
+                     <input type="text" name="observacao" placeholder=" "  value="<?php echo $campo['observacao'] ?>">
+                     <label> Observação:</label>
+                     </div>
+                  <br>
+                        <!-- enviar -->
+                        <button type="submit">CADASTRAR</button>
+                     </td>
                   </form>
                <?php } ?>
             </center>

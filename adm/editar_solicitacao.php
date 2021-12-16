@@ -24,15 +24,14 @@
                <br>
                <?php                   
                //Selecionando o usuario do banco de dados na tabela usuarios
-               $seleciona=mysqli_query($funciona, "SELECT * FROM usuario_por_setor WHERE  id = '$id' ");
+               $seleciona=mysqli_query($funciona, "SELECT * FROM solicitacao WHERE  id_solicitacao = '$id' ");
                      while($campo=mysqli_fetch_array($seleciona)){?>
                <!-- Formulário de cadastro -->
-         <form action="editando_usuario.php" method="POST">
+         <form action="editando_solicitacao.php" method="POST">
              <input type="hidden" name="id" value="<?php echo $campo['id']; //Armazenando a identificação do usuário ?>">
                
-               <div>
-                     <label>Nome do Usuario</label>
-                     <p> <?php echo $campo['nome']; //Apresentando o nome do usuário ?> </p>
+                  <div>
+                     <input value="<?php echo $campo['nome']; //Apresentando o nome do usuário ?> ">Nome do Usuario</label>
                      </div>
                   <br>
                   <div>
@@ -47,21 +46,11 @@
                      <option >Telefonista</option>
                      </optgroup>
                      </select>
-                     </div>
-                    
-                     <input placeholder=" " type="email" name="email" value="<?php echo $campo['email']; //Apresentando o email do usuário ?>" required>
-                     <label>Email</label>
-                     </div>   
+                     </div>  
+                     <input type="text" name="problema" value="<?php echo $campo['problema']; ?>">
                         <br>
                      <div>
-                        <input placeholder=" " required required name="contato" value="<?php echo($campo['contato']); ?>"> 
-                        <label>Contato do Usuarios</label>
-                     </div>
-                    
                      <div>
-                     <label>Login</label>
-                     <p> <?php echo $campo['login']; //Apresentando o login do usuário ?> </p>
-                     <br>
                      <br>
                         <button type="submit">
                            Alterar
